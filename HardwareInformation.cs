@@ -17,7 +17,7 @@ namespace ComputerInformation
                     string? sTotalphysicalmemory = obj["totalphysicalmemory"]?.ToString();
                     if (double.TryParse(sTotalphysicalmemory, out double lTotalphysicalmemory))
                     {
-                        Console.WriteLine(FormatBytetoGB(lTotalphysicalmemory));
+                        //Console.WriteLine(FormatBytetoGB(lTotalphysicalmemory));
                         memoryList.Add(FormatBytetoGB(lTotalphysicalmemory));
                     }
                 }
