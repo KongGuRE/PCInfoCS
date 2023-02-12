@@ -1,7 +1,4 @@
-﻿using System.Dynamic;
-using System.Management;
-using System.Runtime.Serialization;
-using System.Runtime.Serialization.Formatters.Binary;
+﻿using System.Management;
 
 namespace ComputerInformation
 {
@@ -25,7 +22,7 @@ namespace ComputerInformation
             return memoryList.ToArray();
         }
 
-        public static double FormatBytetoGB (double obj)
+        public static double FormatBytetoGB(double obj)
         {
             const int scale = 1024;
             if (double.TryParse(obj.ToString(), out double formatData))
