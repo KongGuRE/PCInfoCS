@@ -1,9 +1,11 @@
 ﻿using System.Management;
+using System.Runtime.Versioning;
 
 namespace ComputerInformation
 {
     public class HardwareInformation
     {
+        [SupportedOSPlatform("windows")]
         public static double[] WindowGetTotalPhysicalMemory()
         {
             List<double> memoryList = new List<double>();
